@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Detalhes do Equipamento</title>
+</head>
+<body>
+<h1>Detalhes</h1>
+<p><strong>ID:</strong> <span th:text="${equipamento.id}"></span></p>
+<p><strong>Número de Série:</strong> <span th:text="${equipamento.numeroSerie}"></span></p>
+<p><strong>Marca:</strong> <span th:text="${equipamento.marca}"></span></p>
+<p><strong>Modelo:</strong> <span th:text="${equipamento.modelo}"></span></p>
+<p><strong>Data de Entrega:</strong> <span th:text="${equipamento.dataEntrega}"></span></p>
+<a th:href="@{/equipamentos}">Voltar</a>
+</body>
+</html>

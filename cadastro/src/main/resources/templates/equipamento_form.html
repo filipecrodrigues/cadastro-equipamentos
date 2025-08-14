@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Formulário Equipamento</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
 <h1 th:text="${equipamento.id} == null ? 'Novo Equipamento' : 'Editar Equipamento'"></h1>
@@ -26,6 +27,6 @@
     </div>
     <button type="submit">Salvar</button>
 </form>
-<a th:href="@{/equipamentos}">Voltar</a>
+<button type="submit" th:href="@{/equipamentos}">Voltar</button>
 </body>
 </html>
